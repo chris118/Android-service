@@ -1,0 +1,64 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.xiaopeng.android_service.NewActivity">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="StopService"
+        android:id="@+id/_stop"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:onClick="stopServiceInNewAcitvityClicked" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BindService"
+        android:id="@+id/button3"
+        android:layout_below="@+id/_stop"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="39dp"
+        android:onClick="bindServiceNewAcitvityClicked" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="unBindService"
+        android:id="@+id/button4"
+        android:layout_alignBottom="@+id/button3"
+        android:layout_toRightOf="@+id/_stop"
+        android:layout_toEndOf="@+id/_stop"
+        android:layout_marginLeft="64dp"
+        android:layout_marginStart="64dp"
+        android:onClick="unbindServiceNewAcitvityClicked" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="..."
+        android:id="@+id/_info"
+        android:layout_marginTop="102dp"
+        android:layout_below="@+id/button3"
+        android:enabled="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GetServices"
+        android:id="@+id/_getService"
+        android:layout_below="@+id/button3"
+        android:layout_toStartOf="@+id/button4"
+        android:layout_marginTop="39dp"
+        android:layout_toLeftOf="@+id/button4"
+        android:onClick="getServiceNewAcitvityClicked" />
+
+</RelativeLayout>
